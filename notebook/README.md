@@ -11,6 +11,10 @@ The notebooks are numbered to represent the sequential workflow.
 * **Key Steps:**
     * Filtered the 15-class dataset down to 5 target categories.
     * Calculated the image distribution per class.
-    * **Result:** Established the final dataset composition and quantified the exact scarcity of the minority classes..
-
+    * **Result:** Established the final dataset composition and quantified the exact scarcity of the minority classes.
+### 2. `data-seperation.ipynb`
+* **Purpose:** Created a localized, high-density dataset by physically extracting images corresponding to the 5 target classes identified in the metadata analysis.
+* **Key Steps:**
+    * Imported the filtered CSV generated in the previous step to serve as the master manifest.
+    * **Result:** A streamlined, standalone dataset containing only the 5 classes of interest, significantly reducing storage overhead and accelerating training I/O.
 ---
