@@ -43,3 +43,19 @@ We employ a **transformer-based backbone** for the denoising process:
 
 * **Forward Process:** Gradually add Gaussian noise to latent patches.
 * **Reverse Process:** The DiT predicts the noise to reconstruct the clean latent, which is then decoded back to pixel space.
+
+# Project Roadmap
+
+## Phase 1: Classification (Complete)
+- [x] Train EVA-02 on Chest X-Rays
+- [x] Generate Confusion Matrix & ROC Curves
+
+## Phase 2: Generative Augmentation (In Progress)
+- [x] Set up DiT-Base architecture
+- [ ] Train DiT on minority class (Cardiomegaly) to 50k steps
+- [ ] Generate 500 synthetic images
+- [ ] Filter synthetic images for quality
+
+## Phase 3: Re-Training
+- [ ] Mix synthetic data with original train set
+- [ ] Retrain EVA-02 and compare AUC scores
